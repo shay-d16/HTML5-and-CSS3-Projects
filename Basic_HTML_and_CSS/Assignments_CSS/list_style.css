@@ -4,7 +4,14 @@ body {
 }
 ol {
 	list-style-type: upper-roman;
+	text-align: center;
 }
 ul {
-	list-style-type: square;
+	text-align: center;
 }
+p {
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	
