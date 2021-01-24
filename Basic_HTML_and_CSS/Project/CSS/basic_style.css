@@ -1,0 +1,97 @@
+body {
+    background-color: lightcoral;
+}
+
+h1 {
+    color:lavenderblush;
+    margin-left: 100px;
+    text-shadow: 1px .5px rgba(0,0,0, 0,6);
+}
+
+.container {
+    width: 450px;
+    height: 405px;
+    background-color: lightpink;
+    border: 2px black;
+    border-radius: 5%;
+}
+
+/* ---------------------------------------------
+    SELECT ALL SQUARES IN THE ARRAY
+------------------------------------------------*/
+.container .squares:nth-child(-n+4) {
+    background-image: url("../images/icons/smileyface2.png") ;
+    color: paleturquoise;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px black;
+    border-radius:25%;
+    cursor:pointer;
+    transition-property: ;
+    transition-duration: ;
+    transition-delay: ;
+    transition: transform .5% ease-in-out;
+}
+
+/* ----------------------------------------------
+    SELECT ALL SQUARES PARAGRAPHS IN HTE ARRAY
+-------------------------------------------------*/
+.squares:nth-child(-n+4) p{
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif ;
+    font-size: .75cm;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px black;
+}
+
+/*-----------------------------------------------
+     INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
+-------------------------------------------------*/
+.squares:nth-child(1) {
+    background-color:rgb(255, 105, 180);
+}
+
+.squares:nth-child(2) {
+    background-color:lightblue;
+}
+
+.squares:nth-child(3) {
+    background-color:lightpink;
+}
+
+.squares:nth-child(4) {
+    background-color:palevioletred;
+}
+
+/*-------------------------------------------------
+    HOVER, TRANSLATE, & TRANSFORMS EFFECTS
+---------------------------------------------------*/
+.container .squares:nth-child(-n+4):hover {
+    background-image: url("../images/Icons/smileyface1.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5%;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+
+}
+
+.squares:nth-child(1):hover {
+    background-color:#dda0dd;
+}
+
+.squares:nth-child(2):hover {
+    background-color:#663399;
+}
+
+.squares:nth-child(3):hover {
+    background-color:#afeeee;
+}
+
+.squares:nth-child(4):hover {
+    background-color:#dda0dd;
+}
+
