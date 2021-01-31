@@ -5,7 +5,7 @@
     GENERIC STYLES
 -------------------------------------------------------*/
 html {
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
     -webkit-tap-hightlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: 100%;
@@ -15,7 +15,7 @@ html {
 body {
     font-size: 14px;
     margin: 0;
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.42857143;
     color: #333;
     background-color: rgb(158, 218, 236); 
@@ -27,7 +27,7 @@ nav {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", sans-serif;
+    font-family: sans-serif;
 }
 
 h1 {
