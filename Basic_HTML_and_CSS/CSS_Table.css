@@ -1,0 +1,11 @@
+table {
+		boarder: 1px solid silver;
+}
+td:hover {
+	background-color: lightpink;
+	color: mediumvioletred;
+}
+tr, td {
+	background-color: plum;
+	color: midnightblue;
+}
