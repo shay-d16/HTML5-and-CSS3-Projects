@@ -9,7 +9,7 @@ body {
     top:0;
     width: 100%;
     left: 0;
-
+    z-index:100;
 }
  .navbar a {
     float:left;
@@ -24,10 +24,6 @@ body {
  .navbar a:hover {
      background: rgb(240, 162, 188);
      color:papayawhip;
- }
-
- .main {
-     margin-top: 30px;
  }
 
 #home {
@@ -46,7 +42,7 @@ body {
     margin-bottom: 100px;
 }
 
-.container {
+.home-container {
     position: relative;
     text-align: center;
     color: pink;
@@ -58,12 +54,12 @@ body {
     color:#e785ab;
     letter-spacing: 2pt;
     word-spacing: 16pt;
-    font-size: 4.5em;
+    font-size: 5em;
     text-align: left;
     font-family:cursive;
     line-height: 2;
     font-weight: 900;
-    border: 5px double #fff;
+    border: 5px double rgb(247, 189, 247);
     padding: 10px;
 }
 
@@ -81,8 +77,7 @@ h2 {
     text-shadow: 20px 20px 20px solid rgba(77, 38, 51, 0.945);
     padding-top:50px;
     text-align: center;
-}
-
+    text-shadow:2px 2px 20px 2px rgba(0,0,0,0.9);
 }
 
 .photo {
@@ -105,6 +100,7 @@ h2 {
     border: 15px solid rgba(216, 112, 147, 0.705);
     border-radius: 50px 50px 50px 50px;
     box-shadow: 2px 2px 20px 15px rgba(77, 38, 51, 0.945);
+    margin-bottom: 75px;
 }
 
 .photo-container img {
@@ -120,9 +116,10 @@ h2 {
     background-color: palevioletred;
     border: 5px solid plum;
     border-radius: 8px auto;
-    width:50%;
+    width:100%;
     margin-left:auto;
     margin-right: auto;
+    box-shadow: 2px 2px 20px 2px #d87093b4;
 
 }
 
@@ -132,16 +129,46 @@ h2 {
      text-align: center;
  }
 
+.row {
+    display:inline-flex;
+    position: relative;
+    width:75%;
+}
+
+ .column {
+    float: left;
+    width: 100%;
+    height:100px;
+    margin-top: 50px;
+ }
+
+ .row:after {
+    content:"";
+    display: table;
+    clear:both;
+ }
+
+ .credit p, .credit a{
+     display:inline-flex;
+     text-align: center;
+     color:papayawhip;
+ }
+
+.credit p:hover, .credit a:hover {
+    background-color: plum;
+    color:palevioletred
+}
+
 footer{
-    display:block;
     width: 100%;
     position:absolute;
+    font-variant: small-caps;
     background-color: rgba(224, 101, 142, 0.466);
     color: rgb(253, 251, 251);
-    font-weight: bold;
     text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
     padding:10px 25px 10px 25px;
     text-align: center;
     margin-top: 100px;
-    margin-left: -10px;
+    left:0;
+    right:0;
 }
