@@ -238,7 +238,7 @@ input[type=text] {
 
 /* Hover effects for input boxes */
 input[type=text] {
-    box-shadow: 0 0 5px #00004d inset; /* this creates a blue shadow in the text box when hovered over by the user */
+    box-shadow: 0 0 5px #e72d3d inset; /* this creates a blue shadow in the text box when hovered over by the user */
 }
  
 /* Submit Buttom */
@@ -253,7 +253,7 @@ input[type=submit] {
     display:block;
     margin-left: auto;
     margin-right: auto;
-    font-family: Perpetua, Rockwe;; Extra Bold;
+    font-family: Perpetua, Rockwell Extra Bold;
 }
 
 /* Form Element */
