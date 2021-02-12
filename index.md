@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# HTML and CSS Projects
+Here are a few sample websites that I created using HTML5 and CSS3.
 
-You can use the [editor on GitHub](https://github.com/shay-d16/HTML5-and-CSS3-Projects/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Projects
+- [Space Station Site](https://github.com/shay-d16/HTML5-and-CSS3-Projects/tree/main/Basic_HTML_and_CSS/Space%20Station%20Project)
+- [Movie Theater Site](https://github.com/shay-d16/HTML5-and-CSS3-Projects/tree/main/Basic_HTML_and_CSS/Movie%20Theatre%20Project)
+- [Bath Bomb Site](https://github.com/shay-d16/HTML5-and-CSS3-Projects/tree/main/Basic_HTML_and_CSS/One-Page-Website)
+- [Portfolio Site](https://github.com/shay-d16/HTML5-and-CSS3-Projects/tree/main/Basic_HTML_and_CSS/Final%20Project/ShayPortfolio)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Space Station Project
+This webpage is an example home page for a space travel company. On this page I use a nav bar, image containers, and a form.
 
-### Markdown
+### Movie Theatre Site
+This is an example webpage for a Movie Theater that is styled using Bootstrap 4. It contains many Bootpstrap components, such as a navbar, jumbotron, form, cards, and dropdowns.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Bath Bomb Project
+Here, I utilized the same navbar, form, and image container components from the Space Station project, but experimented with different styles in CSS.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shay-d16/HTML5-and-CSS3-Projects/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Portfolio Project
+This is my current portfolio, which showcases what I have learned so far with HTML and CSS. I will be adding to it throught my Software Developer Bootcamp as I learn more computer languages.
