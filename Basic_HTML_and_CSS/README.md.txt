@@ -4,8 +4,8 @@ Here are a few sample websites that I created using HTML5 and CSS3.
 ## Projects
 - [Space Station Site](https://github.com/shay-d16/HTML5-and-CSS3-Projects/tree/main/Basic_HTML_and_CSS/Space%20Station%20Project)
 - [Movie Theater Site](https://github.com/shay-d16/HTML5-and-CSS3-Projects/tree/main/Basic_HTML_and_CSS/Movie%20Theatre%20Project)
-- Bath Bomb Site
-- Portfolio Site
+- [Bath Bomb Site](https://github.com/shay-d16/HTML5-and-CSS3-Projects/tree/main/Basic_HTML_and_CSS/One-Page-Website)
+- [Portfolio Site](https://github.com/shay-d16/HTML5-and-CSS3-Projects/tree/main/Basic_HTML_and_CSS/Final%20Project/ShayPortfolio)
 
 #### Space Station Project
 This webpage is an example home page for a space travel company. On this page I use a nav bar, image containers, and a form.
