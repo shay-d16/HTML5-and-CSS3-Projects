@@ -1,0 +1,9 @@
+p {
+    color:rebeccapurple;
+}
+
+@media screen and (max-width:600px){
+    p {
+        color:palevioletred
+    }
+}
