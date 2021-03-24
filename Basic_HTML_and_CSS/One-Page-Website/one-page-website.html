@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Bath Bomb Central</title>
+		<script src="./JS/one_page_website.js" defer></script>
 		<link rel="stylesheet" href="./CSS/one_page_website.css">
 		<link rel="stylesheet" href="./CSS/opw_animations.css">
 	</head>
 	<body>
 	
-		<!-- NAV -->
+		<!------------------------------------------------ NAV ------------------------------------------------------>
 		<div class="wrap">
 			<div class="menu-container">
 				<ul class="menu">
@@ -18,9 +19,9 @@
 				</ul>
 			</div>
 		</div>
-		<!-- END NAV -->
+		<!---------------------------------------------- END NAV ------------------------------------------------------>
 
-		<!-- HOME -->
+		<!------------------------------------------------ HOME ------------------------------------------------------->
 		<div id="home">
 			<div class="container">
 				<div class="text-center">
@@ -28,92 +29,138 @@
 				</div>
 			</div>
 		</div>
-		<!-- END HOME-->
+		<!----------------------------------------------- END HOME ---------------------------------------------------->
 
-		<!-- GALLERY -->
+		<!------------------------------------------------ GALLERY ---------------------------------------------------->
 		<section id="gallery">
 			<div class="container">
-				<h1>Gallery</h1>
-				<div class="flex-container">
-
-					<!-- PHOTO CONTAINER 1 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumbs/bath_thumb1.png" alt="Flower Bomb">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Learn to make your own bath bombs at home!</p>
-							</div>
+				<div class="head-padding">
+					<h1 class="head-padding">Gallery</h1>
+					<!-- Images used to open the lightbox -->
+					<div class="row">
+						<div class="column">
+							<img src="Images/Thumbs/bath_thumb1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="Images/Thumbs/bath_thumb2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="Images/Thumbs/bath_thumb3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="Images/Thumbs/bath_thumb4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="Images/Thumbs/bath_thumb5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="Images/Thumbs/bath_thumb6.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="Images/Thumbs/bath_thumb7.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="Images/Thumbs/bath_thumb8.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
 						</div>
 					</div>
-					<!-- END PHOTO CONTAINER 1 -->
-				
 
-					<!-- PHOTO CONTAINER 2 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumbs/bath_thumb2.png" alt="Hot Pink Flower Bomb">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Learn to make your own bath bombs at home!</p>
+					<!-- The Modal/Lightbox -->
+					<div id="opwModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+
+							<div class="mySlides">
+								<div class="numbertext">1/8</div>
+								<img src="Images/Thumbs/bath_thumb1.png" style="width: 60%;">
 							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2/8</div>
+								<img src="Images/Thumbs/bath_thumb2.jpg" style="width: 60%;">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">3/8</div>
+								<img src="Images/Thumbs/bath_thumb3.png" style="width: 60%;">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">4/8</div>
+								<img src="Images/Thumbs/bath_thumb4.png" style="width: 60%;">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">5/8</div>
+								<img src="Images/Thumbs/bath_thumb5.png" style="width: 60%;">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">6/8</div>
+								<img src="Images/Thumbs/bath_thumb6.png" style="width: 60%;">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">7/8</div>
+								<img src="Images/Thumbs/bath_thumb7.png" style="width: 60%;">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">8/8</div>
+								<img src="Images/Thumbs/bath_thumb8.png" style="width: 60%;">
+							</div>
+
+							<!-- Next/Previous controls -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<!-- Caption Text -->
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<!-- Thumbnail image controls -->
+							<div class="column" style="margin-left: 2%;">
+								<img class="opThumb-controls" src="Images/Thumbs/bath_thumb1.png" onclick="currentSlide(1)" alt="Sunshine and Daisies">
+							</div>
+
+							<div class="column">
+								<img class="opThumb-controls" src="Images/Thumbs/bath_thumb2.jpg" onclick="currentSlide(2)" alt="Mocha Coffee Soap Bar">
+							</div>
+
+							<div class="column">
+								<img class="opThumb-controls" src="Images/Thumbs/bath_thumb3.png" onclick="currentSlide(3)" alt="Galaxy Beyond">
+							</div>
+
+							<div class="column">
+								<img class="opThumb-controls" src="Images/Thumbs/bath_thumb4.png" onclick="currentSlide(4)" alt="La Vie En Rosebomb">
+							</div>
+
+							<div class="column">
+								<img class="opThumb-controls" src="Images/Thumbs/bath_thumb5.png" onclick="currentSlide(5)" alt="Lovers Bomb">
+							</div>
+
+							<div class="column">
+								<img class="opThumb-controls" src="Images/Thumbs/bath_thumb6.png" onclick="currentSlide(6)" alt="Confetti Doughnut Bombs">
+							</div>
+						
+							<div class="column">
+								<img class="opThumb-controls" src="Images/Thumbs/bath_thumb7.png" onclick="currentSlide(7)" alt="Fizzy Chocolate">
+							</div>
+
+							<div class="column">
+								<img class="opThumb-controls" src="Images/Thumbs/bath_thumb8.png" onclick="currentSlide(8)" alt="Summer Splash Bomb">
+							</div>
+
+
 						</div>
 					</div>
-					<!-- END PHOTO CONTAINER 2 -->
-
-					<!-- PHOTO CONTAINER 3 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumbs/bath_thumb3.png" alt="Plate of Bath Bombs">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Learn to make your own bath bombs at home!</p>
-							</div>
-						</div>
-					</div>
-				    <!-- END PHOTO CONTAINER 3 -->
-					
-					<!-- PHOTO CONTAINER 4 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumbs/bath_thumb4.png" alt="Rose Bomb">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Learn to make your own bath bombs at home!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 4 -->
-
-					<!-- PHOTO CONTAINER 5 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumbs/bath_thumb5.png" alt="Rose Bath Bomb 2">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Learn to make your own bath bombs at home!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 5 -->
-
-					<!-- PHOTO CONTAINER 6 -->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./Images/Thumbs/bath_thumb6.png" alt="Donut Bath Bomb">
-							<div class="photo-overlay">
-								<h3 class="white-head">Click to Enlarge</h3>
-								<p>Learn to make your own bath bombs at home!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO CONTAINER 6 -->
-
 				</div>
-		</section>
-		<!-- END GALLERY -->
+			</div>
 
-		<!-- RSVP -->
+		</section>
+		<!---------------------------------------------- END GALLERY ------------------------------------------------------->
+
+		<!------------------------------------------------- RSVP ----------------------------------------------------------->
 		<section id="contact">
             <div class="container">
                 <div class="heading-padding">
@@ -144,10 +191,10 @@
                 </div>
             </div>
         </section>
-		<!-- END RSVP -->
+		<!------------------------------------------------- END RSVP -------------------------------------------------------->
 
-		<!-- FOOTER -->
+		<!-------------------------------------------------- FOOTER --------------------------------------------------------->
 		<div id="footer">
             www.bathbombcentral.net &nbsp;| &nbsp; &copy; 2021
 		</div>
-		<!-- END FOOTER -->
+		<!------------------------------------------------ END FOOTER ------------------------------------------------------->

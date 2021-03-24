@@ -38,69 +38,140 @@
 /*-----------------------------------------------------------------
     GALLERY SECTION ANIMATION
 -------------------------------------------------------------------*/
-.photo {
-    position: relative;
-    line-height: 0;
-    margin-bottom: 2em;
-    overflow: hidden;
-    border-radius: 8px;
-    padding: 1px;
-    border: 1px solid #b6575f;
-    background-color: #fff;
-    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
+.row > .column {
+    padding: 10px 10px;
 }
 
-.photo-container {
-    text-align: center;
-    margin: 15px auto;
-    width: 300px;
-    height: 525px;
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.photo-container img {
-    max-width: 100%;
-    width: 300px;
-    height: 525px;
+/* Create four equal columns that float next to each other */
+.column {
+    float: left;
+    width: 12%;
 }
 
-.photo-overlay {
-    color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
     left: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    justify-content: center; /*For centering text inside.photo-overlay */
-    align-items: center;
-    background: rgba(0, 0, 0, 0.322);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(198, 132, 211, 0.808);
 }
 
-.white-head {
-    color: #c9bdaa;
-    margin-top: 5%;
+/* Modal Content */
+.modal-conent {
+    position: relative;
+    background-color: #fefefe;
+    margin-left: 10%;
+    padding:0;
+    width:90%;
+    max-width: 1000px;
 }
 
-/*---------------------------------
-    PHOTO OVERLAY TRANSITIONS
------------------------------------*/
-.photo-overlay {
-    opacity: 0;
-    transition: opacity .5s;
-    border-radius: 10px;
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color:rgba(240, 110, 110, 0.719);
+    text-decoration: none;
     cursor: pointer;
 }
 
-.photo-overlay:hover {
+/* Hide the slides by deafult */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    padding-left: 20%;
+    padding-right: 10%;
+}
+
+/* Next/Previous buttons */
+.prev, 
+.next {
+    cursor:pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    padding-top: 10%;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the Next button to the right */
+.next {
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with slight transparency */
+.prev:hover,
+.next:hover {
+    background-color: rgba(211, 180, 218, 0.808);
+}
+
+/* Number text (1/6 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 24px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: rgba(198, 132, 211, 0.808);
+    padding: 2px 16px;
+    color:white;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+img.opThumb-controls {
+    opacity: 0.6;
+    padding-bottom: 150px ;
+}
+
+.active, 
+.opThumb-controls:hover {
     opacity: 1;
 }
 
-.photo img {
-    transition: transform .5s;
-    transform-origin: 50% 50%; 
+img.hover-shadow {
+    transition: 0.3s;
 }
 
-.photo:hover img {
-    transition: scale(1.1);
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
