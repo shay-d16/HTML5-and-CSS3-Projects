@@ -14,9 +14,13 @@
         <!-- NAVBAR -->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <!--New Section added -->
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Conact</a>
+            <a href="#LinkedIn">LinkedIn</a>
+            <!--Onlcick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()">Conact</a>
         </div>
 
         <br>
@@ -42,18 +46,71 @@
                     </q>
                     <br> -Deepak Chopra
                     <br>
-                    <br> My name is Shalondra Rossiter. Welcome to my portfolio website! On it, I will tell you about my background and current level of experience.
+                    <br> My name is Shalondra Rossiter. Welcome to my portfolio website! Let tell you about my background and current level of experience.
                     <br>
                     <br> Thank you for stopping by!
                 </p>
-            </strong>
+            </strong><br><br><br>
         </div>
+
+        <!-- SLIDESHOW SECTION added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/shay_the_professional.png" alt="Picture of myself">
+                       <div class="text">I am available to assist you on your project!</div> 
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS Logo">
+                        <div class="text">I am a studying to become a full-stack software developer!<br> So far, I am trained in:<br>HTML, CSS, and JavaScript.</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/Python.png" alt="Python Logo">
+                        <div class="text">Soon, I will be learning Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="SlideShow_Images" src="./images/C_Sharp_and_Dot_NET.png" alt="C# Logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="SlideShow_Images" src="./images/SQL_and_Database.jpg" alt="SQL Logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="SLideshow_Images" src="./images/developer.png" alt="">
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me today!</a></div>
+                    </div>
+                    <!-- Previous and Next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+        <!-- END SLIDESHOW -->
 
         <!-- ABOUT SECTION -->
         <div class="Row" id="About">
             <!-- left column -->
             <div class="Column_2">
-                <img src="./home.png" alt="Butterfly Photo">
+                <img src="./images/home.png" alt="Butterfly Photo">
             </div>
             <!-- Right column -->
             <div class="Column_1">
@@ -61,9 +118,9 @@
                 <p>
                     You can call me "Shay". I am a mother, a gamer, a reader and a software developer in-the-making!
                     <br>
-                    <br>I am a student in <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Bootcamp. I am currently trained and experienced in the programming languages HTML5 and CSS3. Soon I will be learning SQL, JavaScript, Python, and C#.
+                    <br>I am a student at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Bootcamp. I am currently trained in the fundamentals of HTML5, CSS3, and JavaScript. Soon I will be learning SQL, Python, and C#!
                     <br>
-                    <br>I would be thrilled to work on a project for you! For inquiries, please <a href="#Contact">Contact</a> me below!
+                    <br>I would be thrilled to work on a project for you! For inquiries, just give that <a href="#Contact">Contact</a> button a quick click!
                 </p>
             </div>
         </div>
@@ -74,6 +131,7 @@
             <div class="Column_1">
                 <h1>GitHub</h1>
                 <p class="center">
+                    <br><br>
                     You can view my coding projects on my GitHub profile here:
                     <br>
                     <p class="center"><a href="https://github.com/shay-d16" target="_blank">Shay's GitHub</a></p>
@@ -81,28 +139,48 @@
             </div>
             <!-- Right column -->
             <div class="Column_2">
-                <a href="https://github.com/shay-d16" target="_blank"><img src="../SamplePortfolio/GitHub.png"></a>
+                <a href="https://github.com/shay-d16" target="_blank"><img src="./images/GitHub.png"></a>
             </div>
         </div>
+        <!-- END GITHUB SECTION -->
+
+        <!--LINKEDIN SECTION-->
+        <div class="Row" id="LinkedIn">
+            <!-- Left column -->
+            <div class="Column_2">
+                <a href="https://www.linkedin.com/in/shalondra-r-579622202/" target="_blank"><img src="./images/linkedIn.png"></a>
+                
+                </p>
+            </div>
+            <!-- Right column -->
+            <div class="Column_1">
+                <h1>LinkedIn</h1>
+                <br><br>
+                <p class="center">
+                    And here is my <a href="https://www.linkedin.com/in/shalondra-r-579622202/">LinkedIn</a> profile as well!
+                    <br>
+                </p>
+            </div>
+        </div>
+        <!--END LINKEDIN SECTION-->
 
         <!-- CONTACT SECTION -->
-        <div class="Row" id="Contact">
-            <!-- Contact image, left column -->
-            <div class="Column_2 Column_tall">
-                <img src="./shay_the_professional.png" alt="Conact_Image">
-            </div>
-            <!-- Contact form, right column -->
-            <div class="Column_1 Column_tall">
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/moqpbbkq" method="POST" class="form-container">
                 <h1>Contact</h1>
-                <!-- This specifies where and how to send the form data; we are leaving it blank -->
-                <form action="" method="POST">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
@@ -114,5 +192,6 @@
                 <br>
             </p>
         </footer>
+        <script src="./portfolio.js"></script>
     </body>
 </html>
